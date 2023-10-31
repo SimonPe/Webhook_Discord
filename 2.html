@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expéditeur de Webhook</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #word-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-top: 80px; 
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 20px;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            outline: none;
+            font-size: 20px;
+        }
+
+        #call-me {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 20px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #call-me:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        #image-container {
+            position: absolute;
+            top: 20px;
+            left: 20px; 
+        }
+
+        #image-container img {
+            width: 50px; 
+            height: auto; 
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); 
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1; 
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px
+        }
+
+        .navbar a.active {
+            background-color: #007bff; 
+            color: white;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        #image-container:hover img {
+            width: 60px;
+            transition: width 0.3s; 
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <a href="index.html"> 
+            <img src="60793.png" alt="Image" />
+        </a>
+    </div>
+    <div id="word-container">
+        <h1>Envoyer un Message a Personne2</h1>
+        <input type="text" id="reason" placeholder="Entrez le Message">
+        <button id="call-me">Envoyer</button>
+        <script src="script2.js"></script>
+        <div id="message-sent" style="display: none; background-color: #5cb85c; color: white; text-align: center; padding: 10px;">
+            Message envoyé
+        </div>
+    </div>
+</body>
+</html>
+

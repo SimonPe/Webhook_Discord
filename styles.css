@@ -1,0 +1,65 @@
+/* Reset CSS styles */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-color: #3d9ee3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the h1 element */
+h1 {
+    font-size: 36px;
+}
+
+/* Style the main content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3d9ee3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.button:hover {
+    background-color: #2b7abf;
+}
+
+.call-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+}
+
