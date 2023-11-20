@@ -1,7 +1,7 @@
 const callMeButton = document.getElementById("call-me");
 const reasonInput = document.getElementById("reason");
 
-const webhookURL = "https://discord.com/api/webhooks/1166332916092108820/sjmXorqVPG-3hWLO3_Dl31Ed0HBv-voyLHW72Kf6WFhwU9I5LMag5WSA_eSfDtIW0Frp";
+const webhookURL = "https://discord.com/api/webhooks/<lien>";
 
 function sendMessageWithMention(content, userId) {
   const mention = `<@${userId}>`;
